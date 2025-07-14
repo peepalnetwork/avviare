@@ -1,0 +1,246 @@
+/* SchoolOfCommerce.css */
+
+.school-of-commerce-page {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Hero Section */
+.soc-hero-section {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 6rem 0;
+  overflow: hidden;
+}
+
+.soc-hero-video-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.soc-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 10, 30, 0.7);
+  z-index: 1;
+}
+
+.soc-hero-content {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-2xl);
+  align-items: center;
+  color: white;
+}
+
+.soc-hero-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.soc-hero-subtitle {
+  font-size: 1.25rem;
+  max-width: 600px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.soc-info-card {
+  background: var(--bg-glass);
+  backdrop-filter: blur(20px);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-xl);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: var(--shadow-xl);
+}
+
+.soc-info-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  margin-bottom: 1.5rem;
+}
+
+.soc-info-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--text-primary) !important;
+}
+
+.soc-info-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.soc-info-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.95rem;
+  color: var(--text-primary) !important;
+}
+
+.soc-info-item svg {
+  color: var(--accent-blue);
+  flex-shrink: 0;
+}
+
+/* Key Highlights Section */
+.key-highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
+}
+
+.highlight-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background: var(--bg-secondary);
+  padding: var(--space-xl);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-light);
+  transition: all 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-light);
+}
+
+.highlight-icon {
+  flex-shrink: 0;
+  color: var(--primary-color);
+}
+
+/* Programs Table Section */
+.programs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--space-2xl);
+  box-shadow: var(--shadow-lg);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.programs-table th,
+.programs-table td {
+  padding: 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.programs-table thead {
+  background: var(--gradient-dark);
+  color: white;
+}
+
+.programs-table tbody tr:nth-child(even) {
+  background-color: var(--bg-secondary);
+}
+
+.programs-table tbody tr:hover {
+  background-color: var(--primary-color-light-trans);
+}
+
+.value-added-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Course Coverage Section */
+.course-coverage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-2xl);
+}
+
+.coverage-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--bg-secondary);
+  padding: 1.25rem;
+  border-radius: var(--radius-lg);
+}
+
+.coverage-item svg {
+  color: var(--success-color);
+}
+
+/* Why Avviare Section */
+.why-avviare-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+  align-items: center;
+}
+
+.why-avviare-content img {
+  width: 100%;
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-xl);
+}
+
+/* B.Com / M.Com Details Section */
+.degree-details-section {
+  padding: 4rem 0;
+}
+
+.degree-details-section h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--primary-dark);
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-xl);
+  margin-top: 2rem;
+}
+
+.reason-card {
+  background: var(--bg-secondary);
+  padding: var(--space-xl);
+  border-radius: var(--radius-xl);
+}
+
+.reason-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* General CTA Button */
+.cta-button-container {
+  text-align: center;
+  margin-top: var(--space-2xl);
+}
