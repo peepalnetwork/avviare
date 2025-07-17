@@ -134,3 +134,38 @@
 .dignitary-info p {
   color: var(--text-light);
 }
+/* NewHome.css */
+
+/* ... your existing styles ... */
+
+.logos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-item {
+  flex: 0 1 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.logo-item img {
+  max-width: 100px;
+  max-height: 50px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.85;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.logo-item img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
